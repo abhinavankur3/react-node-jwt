@@ -1,0 +1,68 @@
+.Login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.LoginCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  width: 20%;
+  margin-top: 30vh;
+}
+
+.ButtonContainer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  font-size: larger;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.HomeBody {
+  position: relative;
+  top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.CityCard {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 20vw;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
