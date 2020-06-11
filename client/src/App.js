@@ -90,7 +90,9 @@ const Login = () => {
       localStorage.setItem("token", response.data.accessToken);
       setFullname(response.data.fullname);
     } catch (err) {
-      err = err.response ? err.response.data : err;
+      err = err.response ? err.response.data.error : err;
+      console.log(err);
+
       alert(err.message);
     }
   };
@@ -141,7 +143,7 @@ const Register = () => {
       });
       alert("Registration Successful. Please redirect to Login");
     } catch (err) {
-      err = err.response ? err.response.data : err;
+      err = err.response ? err.response.data.error : err;
       alert(err.message);
     }
   };
